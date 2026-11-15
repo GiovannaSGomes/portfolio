@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Giovanna Gomes</title>
+  <meta name="description" content="Projetos de QA de Giovanna Gomes: automação com Cypress, testes de API e documentação de testes.">
+  <link rel="canonical" href="https://giovannagomes.dev/projetos.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://giovannagomes.dev/projetos.html">
+  <meta property="og:title" content="Projetos | Giovanna Gomes">
+  <meta property="og:description" content="Automação com Cypress, testes de API e documentação de testes.">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐞</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">giovanna<span>.qa()</span></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="index.html">Sobre mim</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+        </ul>
+        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema">☾</button>
+        <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-head">
+      <p class="eyebrow">// projetos</p>
+      <h1>Projetos de QA</h1>
+      <p>Estudos e projetos práticos de automação, API e documentação de testes. <span id="count" class="mono"></span></p>
+    </section>
+
+    <div class="toolbar">
+      <div class="filters" id="filters" role="group" aria-label="Filtrar por categoria"></div>
+      <input type="search" id="search" class="search" placeholder="Buscar por nome ou tecnologia..." aria-label="Buscar projetos">
+    </div>
+
+    <section class="projects-grid" id="projects-grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="year"></span> Giovanna Gomes</span>
+      <span>
+        <a href="https://github.com/GiovannaSGomes" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/giovannasgomes/" target="_blank" rel="noopener">LinkedIn</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projetos.js"></script>
+</body>
+</html>
