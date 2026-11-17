@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giovanna Gomes | QA Analyst</title>
-  <meta name="description" content="Portfólio de Giovanna Gomes, QA Analyst: testes manuais, documentação, testes de API e automação com Cypress.">
+  <title data-i18n="home.title">Giovanna Gomes | QA Analyst</title>
+  <meta name="description" content="Portfólio de Giovanna Gomes, QA Analyst: testes manuais, documentação, testes de API e automação com Cypress." data-i18n-attr="content:home.description">
   <link rel="canonical" href="https://giovannagomes.dev/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://giovannagomes.dev/">
   <meta property="og:title" content="Giovanna Gomes | QA Analyst">
-  <meta property="og:description" content="Testes manuais, documentação, testes de API e automação com Cypress.">
+  <meta property="og:description" content="Testes manuais, documentação, testes de API e automação com Cypress." data-i18n-attr="content:home.og.description">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐞</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +23,14 @@
   <header class="header">
     <div class="container">
       <a href="index.html" class="logo">giovanna<span>.qa()</span></a>
-      <nav class="nav" aria-label="Navegação principal">
+      <nav class="nav" aria-label="Navegação principal" data-i18n-attr="aria-label:nav.label">
         <ul class="nav-links">
-          <li><a href="index.html" aria-current="page">Sobre mim</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="index.html" aria-current="page" data-i18n="nav.about">Sobre mim</a></li>
+          <li><a href="projetos.html" data-i18n="nav.projects">Projetos</a></li>
         </ul>
-        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema">☾</button>
-        <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+        <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Switch to English" lang="en">EN</button>
+        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema" data-i18n-attr="aria-label:btn.theme">☾</button>
+        <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false" data-i18n-attr="aria-label:btn.menu">☰</button>
       </nav>
     </div>
   </header>
@@ -38,14 +40,14 @@
     <!-- Apresentação -->
     <section class="hero">
       <div>
-        <p class="eyebrow">// QA Analyst · Campinas-SP</p>
-        <h1>Olá, eu sou a Giovanna. Eu encontro bugs antes do usuário.</h1>
-        <p class="lead">
+        <p class="eyebrow" data-i18n="hero.eyebrow">// QA Analyst · Campinas-SP</p>
+        <h1 data-i18n="hero.title">Olá, eu sou a Giovanna. Eu encontro bugs antes do usuário.</h1>
+        <p class="lead" data-i18n="hero.lead">
           QA Analyst na Venturus desde 2021. Trabalho com testes manuais, escrita de casos de teste
           em Gherkin, testes de API com Postman, consultas em SQL e MongoDB e automação com Cypress.
         </p>
         <div class="btn-row">
-          <a href="projetos.html" class="btn btn-primary">Ver projetos →</a>
+          <a href="projetos.html" class="btn btn-primary" data-i18n="hero.cta">Ver projetos →</a>
           <a href="https://github.com/GiovannaSGomes" class="btn" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/in/giovannasgomes/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
         </div>
@@ -56,13 +58,13 @@
         <p class="dim">$ npx cypress run --spec giovanna.cy.js</p>
         <p>&nbsp;</p>
         <p>Giovanna Gomes - QA Analyst</p>
-        <p class="pass">&nbsp;&nbsp;✓ escreve casos de teste em Gherkin</p>
-        <p class="pass">&nbsp;&nbsp;✓ valida APIs com Postman</p>
-        <p class="pass">&nbsp;&nbsp;✓ consulta dados em SQL e MongoDB</p>
-        <p class="pass">&nbsp;&nbsp;✓ automatiza fluxos com Cypress</p>
-        <p class="pass">&nbsp;&nbsp;✓ reporta bugs com clareza</p>
+        <p class="pass">&nbsp;&nbsp;✓ <span data-i18n="term.1">escreve casos de teste em Gherkin</span></p>
+        <p class="pass">&nbsp;&nbsp;✓ <span data-i18n="term.2">valida APIs com Postman</span></p>
+        <p class="pass">&nbsp;&nbsp;✓ <span data-i18n="term.3">consulta dados em SQL e MongoDB</span></p>
+        <p class="pass">&nbsp;&nbsp;✓ <span data-i18n="term.4">automatiza fluxos com Cypress</span></p>
+        <p class="pass">&nbsp;&nbsp;✓ <span data-i18n="term.5">reporta bugs com clareza</span></p>
         <p>&nbsp;</p>
-        <p><span class="pass">5 passing</span> <span class="dim">(6 anos em QA)</span></p>
+        <p><span class="pass">5 passing</span> <span class="dim" data-i18n="term.years">(6 anos em QA)</span></p>
         <p class="dim cursor">$ </p>
       </div>
     </section>
@@ -71,18 +73,18 @@
     <section class="section" id="sobre">
       <div class="about-grid">
         <div class="card">
-          <h2>Sobre mim</h2>
-          <p>
+          <h2 data-i18n="about.title">Sobre mim</h2>
+          <p data-i18n="about.p1">
             Sou formada em Engenharia de Computação pela UniMetrocamp e trabalho com qualidade de
             software desde 2020, quando comecei como estagiária de QA na Venturus. Desde 2021 sou
             QA Analyst e atuo em times multidisciplinares com metodologia ágil.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             No dia a dia, escrevo e executo testes, reporto defeitos no Jira, escrevo documentação
             como requisitos e guias de usuário, testo APIs com Postman e faço consultas e validações
             em bancos SQL e MongoDB.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             Antes da área de software, fui técnica em eletrônica na Certlab, fazendo testes de
             certificação de baterias de lítio e SAR segundo normas técnicas. Foi lá que aprendi a
             seguir padrões com rigor, escrever relatórios e lidar com prazos de vários clientes,
@@ -91,27 +93,27 @@
         </div>
 
         <div class="card">
-          <h2>Trajetória</h2>
+          <h2 data-i18n="career.title">Trajetória</h2>
           <ol class="timeline">
             <li>
-              <span class="when">2021 – atual</span>
-              <h3>QA Analyst · Venturus</h3>
-              <p>Testes, reporte de defeitos, documentação, Postman, SQL e MongoDB.</p>
+              <span class="when" data-i18n="career.1.when">2021 – atual</span>
+              <h3 data-i18n="career.1.role">QA Analyst · Venturus</h3>
+              <p data-i18n="career.1.desc">Testes, reporte de defeitos, documentação, Postman, SQL e MongoDB.</p>
             </li>
             <li>
               <span class="when">2020 – 2021</span>
-              <h3>Estagiária de QA · Venturus</h3>
-              <p>Escrita e execução de testes de software.</p>
+              <h3 data-i18n="career.2.role">Estagiária de QA · Venturus</h3>
+              <p data-i18n="career.2.desc">Escrita e execução de testes de software.</p>
             </li>
             <li>
               <span class="when">2018 – 2022</span>
-              <h3>Engenharia de Computação · UniMetrocamp</h3>
-              <p>Graduação.</p>
+              <h3 data-i18n="career.3.role">Engenharia de Computação · UniMetrocamp</h3>
+              <p data-i18n="career.3.desc">Graduação.</p>
             </li>
             <li>
               <span class="when">2017 – 2020</span>
-              <h3>Técnica em Eletrônica · Certlab</h3>
-              <p>Testes de certificação de baterias de lítio e SAR conforme normas.</p>
+              <h3 data-i18n="career.4.role">Técnica em Eletrônica · Certlab</h3>
+              <p data-i18n="career.4.desc">Testes de certificação de baterias de lítio e SAR conforme normas.</p>
             </li>
           </ol>
         </div>
@@ -120,21 +122,21 @@
 
     <!-- Habilidades -->
     <section class="section" id="habilidades">
-      <h2>Habilidades</h2>
-      <p class="subtitle">Ferramentas e práticas que uso no dia a dia.</p>
+      <h2 data-i18n="skills.title">Habilidades</h2>
+      <p class="subtitle" data-i18n="skills.subtitle">Ferramentas e práticas que uso no dia a dia.</p>
       <div class="skills-grid">
         <div class="card">
-          <h3>Testes e documentação</h3>
+          <h3 data-i18n="skills.testing">Testes e documentação</h3>
           <ul class="tags">
-            <li class="tag">Casos de teste</li>
+            <li class="tag" data-i18n="skills.testcases">Casos de teste</li>
             <li class="tag">Gherkin / BDD</li>
             <li class="tag">Bug report</li>
-            <li class="tag">Requisitos</li>
-            <li class="tag">Guias de usuário</li>
+            <li class="tag" data-i18n="skills.requirements">Requisitos</li>
+            <li class="tag" data-i18n="skills.guides">Guias de usuário</li>
           </ul>
         </div>
         <div class="card">
-          <h3>API e dados</h3>
+          <h3 data-i18n="skills.api">API e dados</h3>
           <ul class="tags">
             <li class="tag">Postman</li>
             <li class="tag">REST</li>
@@ -143,19 +145,19 @@
           </ul>
         </div>
         <div class="card">
-          <h3>Automação</h3>
+          <h3 data-i18n="skills.automation">Automação</h3>
           <ul class="tags">
             <li class="tag">Cypress</li>
             <li class="tag">JavaScript</li>
           </ul>
         </div>
         <div class="card">
-          <h3>Processo e idiomas</h3>
+          <h3 data-i18n="skills.process">Processo e idiomas</h3>
           <ul class="tags">
             <li class="tag">Jira</li>
-            <li class="tag">Metodologia ágil</li>
+            <li class="tag" data-i18n="skills.agile">Metodologia ágil</li>
             <li class="tag">Git</li>
-            <li class="tag">Inglês intermediário</li>
+            <li class="tag" data-i18n="skills.english">Inglês intermediário</li>
           </ul>
         </div>
       </div>
@@ -173,6 +175,7 @@
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
